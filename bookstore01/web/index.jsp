@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>书城首页</title>
-    <link type="text/css" rel="stylesheet" href="static/css/style.css">
+    <%@ include file="/pages/common/header.jsp"%>>
 </head>
 <body>
 
@@ -172,10 +172,6 @@
 
 </div>
 
-<div id="bottom">
-		<span>
-			尚硅谷书城.Copyright &copy;2015
-		</span>
-</div>
+<%@include file="/pages/common/footer.jsp"%>
 </body>
 </html>
