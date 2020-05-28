@@ -8,8 +8,10 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 
 public abstract class BaseServlet extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
+        System.out.println("++++"+action);
         try {
             // 获取action业务鉴别字符串，获取相应的业务 方法反射对象
             Method method = this.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);
@@ -19,5 +21,9 @@ public abstract class BaseServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req,resp);
     }
 }

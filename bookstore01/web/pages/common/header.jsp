@@ -9,7 +9,7 @@
 <%--<base href="http://localhost:8080/bookstore01/ "/>--%>
 <%
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() +"/" +
-    request.getContextPath() + "/";
+    request.getContextPath() ;
 %>
 <base href="<%=basePath%> "/>
 <link type="text/css" rel="stylesheet" href="static/css/style.css">
