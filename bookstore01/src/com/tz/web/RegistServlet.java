@@ -12,13 +12,15 @@ import java.io.IOException;
 
 public class RegistServlet extends HttpServlet {
     private UserService userService = new UserServiceImpl();
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String email = request.getParameter("email");
+        request.setAttribute("username",username);
+        request.setAttribute("email",email);
 //        System.out.println(username);
         if (userService.existsUsername(username)) {
+            request.setAttribute("msg","用户名已存在");
             request.getRequestDispatcher("/pages/user/regist.jsp").forward(request, response);
         } else {
             userService.registUser(new User(null,username, password, email));
