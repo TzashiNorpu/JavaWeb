@@ -17,6 +17,12 @@ public class BookServlet extends BaseServlet {
             IOException {
 //1 通过 BookService 查询全部图书
         List<Book> books = bookService.queryBooks();
+        for (int i = 0; i < books.size(); i++) {
+            System.out.println("哈哈"+books.get(i));
+        }
+        for (Book queryBook : books) {
+            System.out.println("哈哈"+queryBook);
+        }
 //2 把全部图书保存到 Request 域中
         req.setAttribute("books", books);
 //3、请求转发到/pages/manager/book_manager.jsp 页面

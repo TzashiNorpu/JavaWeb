@@ -39,7 +39,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>bookServlet</servlet-name>
-        <url-pattern>/manager/bookServlet</url-pattern>
+        <url-pattern>/manage/bookServlet</url-pattern>
     </servlet-mapping>
 
 </web-app>

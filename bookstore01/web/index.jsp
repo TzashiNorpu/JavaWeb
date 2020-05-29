@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>书城首页</title>
-    <%@ include file="/pages/common/header.jsp"%>>
+    <%@ include file="/pages/common/header.jsp"%>
 </head>
 <body>
 
