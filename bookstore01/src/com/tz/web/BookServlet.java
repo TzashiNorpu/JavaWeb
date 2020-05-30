@@ -3,6 +3,7 @@ package com.tz.web;
 import com.tz.dao.BookDao;
 import com.tz.dao.impl.BookDaoImpl;
 import com.tz.pojo.Book;
+import com.tz.utils.WebUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +15,10 @@ public class BookServlet extends BaseServlet {
     BookDao bookService = new BookDaoImpl();
 
     protected void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        Book book = WebUtils.copyParamsToBean(req.getParameterMap(), new Book());
+        bookService.addBook(book);
+//        req.getRequestDispatcher("/manager/bookServlet?action=list").forward(req,resp);
+        resp.sendRedirect(req.getContextPath()+"/manage/bookServlet?action=list");
     }
     protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
