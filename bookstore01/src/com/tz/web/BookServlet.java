@@ -3,6 +3,9 @@ package com.tz.web;
 import com.tz.dao.BookDao;
 import com.tz.dao.impl.BookDaoImpl;
 import com.tz.pojo.Book;
+import com.tz.pojo.Page;
+import com.tz.service.BookService;
+import com.tz.service.impl.BookServiceImpl;
 import com.tz.utils.WebUtils;
 
 import javax.servlet.ServletException;
@@ -13,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 public class BookServlet extends BaseServlet {
-    BookDao bookService = new BookDaoImpl();
+    BookService bookService = new BookServiceImpl();
 
     protected void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Map<String, String[]> parameterMap = req.getParameterMap();
@@ -21,8 +24,9 @@ public class BookServlet extends BaseServlet {
         bookService.addBook(book);
         // 不能用转发，不然浏览器刷新时会重新提交增加图书的请求
 //        req.getRequestDispatcher("/manager/bookServlet?action=list").forward(req,resp);
-        resp.sendRedirect(req.getContextPath()+"/manage/bookServlet?action=list");
+        resp.sendRedirect(req.getContextPath() + "/manage/bookServlet?action=list");
     }
+
     protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String id = req.getParameter("id");
         try {
@@ -30,11 +34,22 @@ public class BookServlet extends BaseServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        resp.sendRedirect("/manage/bookServlet?action=delete");
+        resp.sendRedirect(req.getContextPath() + "/manage/bookServlet?action=list");
     }
-    protected void update(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+    protected void get(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String id = req.getParameter("id");
+        Book book = bookService.queryBookById(Integer.parseInt(id));
+        req.setAttribute("book", book);
+        req.getRequestDispatcher("/pages/manager/book_edit.jsp").forward(req, resp);
     }
+
+    protected void update(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Book book = WebUtils.copyParamsToBean(req.getParameterMap(), new Book());
+        bookService.updateBook(book);
+        resp.sendRedirect(req.getContextPath() + "/manage/bookServlet?action=list");
+    }
+
     protected void list(HttpServletRequest req, HttpServletResponse resp) throws ServletException,
             IOException {
         //1 通过 BookService 查询全部图书
@@ -49,5 +64,18 @@ public class BookServlet extends BaseServlet {
         req.setAttribute("books", books);
         //3、请求转发到/pages/manager/book_manager.jsp 页面
         req.getRequestDispatcher("/pages/manager/book_manager.jsp").forward(req, resp);
+    }
+
+    protected void page(HttpServletRequest req, HttpServletResponse resp) throws ServletException,
+            IOException {
+        //1 获取请求的参数 pageNo 和 pageSize
+        int pageNo = WebUtils.parseInt(req.getParameter("pageNo"), 1);
+        int pageSize = WebUtils.parseInt(req.getParameter("pageSize"), Page.PAGE_SIZE);
+        //2 调用 BookService.page(pageNo，pageSize)：Page 对象
+        Page<Book> page = bookService.page(pageNo, pageSize);
+        //3 保存 Page 对象到 Request 域中
+        req.setAttribute("page", page);
+        //4 请求转发到 pages/manager/book_manager.jsp 页面
+        req.getRequestDispatcher("/pages/manager/book_manager.jsp").forward(req,resp);
     }
 }

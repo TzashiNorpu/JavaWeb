@@ -9,4 +9,7 @@ public interface BookDao {
     public int updateBook(Book book);
     public Book queryBookById(Integer id);
     public List<Book> queryBooks();
+
+    public Integer queryForPageTotalCount();
+    public List<Book> queryForPageItems(int begin, int pageSize);
 }

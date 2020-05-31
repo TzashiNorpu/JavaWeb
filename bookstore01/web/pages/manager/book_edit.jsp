@@ -29,7 +29,10 @@
 
 <div id="main">
     <form action="manage/bookServlet" method="post">
-        <input type="hidden" name="action" value="add">
+<%--        <input type="hidden" name="action" value="${param.method}">--%>
+<%--        <input type="hidden" name="action" value="${empty param.id ? "add":"update"}">--%>
+        <input type="hidden" name="action" value="${empty requestScope.book ? "add":"update"}">
+        <input type="hidden" name="id" value="${requestScope.book.id}">
         <table>
             <tr>
                 <td>名称</td>
@@ -39,12 +42,21 @@
                 <td>库存</td>
                 <td colspan="2">操作</td>
             </tr>
+<%--            <tr>--%>
+<%--                <td><input name="name" type="text" value="时间简史"/></td>--%>
+<%--                <td><input name="price" type="text" value="30.00"/></td>--%>
+<%--                <td><input name="author" type="text" value="霍金"/></td>--%>
+<%--                <td><input name="sales" type="text" value="200"/></td>--%>
+<%--                <td><input name="stock" type="text" value="300"/></td>--%>
+<%--                <td><input type="submit" value="提交"/></td>--%>
+<%--            </tr>--%>
+
             <tr>
-                <td><input name="name" type="text" value="时间简史"/></td>
-                <td><input name="price" type="text" value="30.00"/></td>
-                <td><input name="author" type="text" value="霍金"/></td>
-                <td><input name="sales" type="text" value="200"/></td>
-                <td><input name="stock" type="text" value="300"/></td>
+                <td><input name="name" type="text" value="${book.name}"/></td>
+                <td><input name="price" type="text" value="${book.price}"/></td>
+                <td><input name="author" type="text" value="${book.author}"/></td>
+                <td><input name="sales" type="text" value="${book.sales}"/></td>
+                <td><input name="stock" type="text" value="${book.stock}"/></td>
                 <td><input type="submit" value="提交"/></td>
             </tr>
         </table>
