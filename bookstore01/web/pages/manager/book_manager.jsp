@@ -57,16 +57,30 @@
         </tr>
     </table>
     <div id="page_nav">
-        <a href="#">首页</a>
-        <a href="#">上一页</a>
+        <c:if test="${requestScope.page.pageNo>1}">
+            <a href="manage/bookServlet?action=page&pageNo=1">首页</a>
+            <a href="manage/bookServlet?action=page&pageNo=${requestScope.page.pageNo-1}">上一页</a>
+        </c:if>
         <a href="#">3</a>
         【${ requestScope.page.pageNo }】
         <a href="#">5</a>
-        <a href="#">下一页</a>
-        <a href="#">末页</a>
+
+        <c:if test="${requestScope.page.pageNo<requestScope.page.pageTotal}">
+            <a href="manage/bookServlet?action=page&pageNo=${requestScope.page.pageNo+1}">下一页</a>
+            <a href="manage/bookServlet?action=page&pageNo=${requestScope.page.pageTotal}">末页</a>
+        </c:if>
+
         共${ requestScope.page.pageTotal }页，${ requestScope.page.pageTotalCount }条记录
-        到第<input value="4" name="pn" id="pn_input"/>页
-        <input type="button" value="确定">
+        到第<input value="${requestScope.page.pageNo}" name="pn" id="pn_input"/>页
+        <input id="search" type="button" value="确定">
+        <script type="text/javascript">
+            $(function () {
+                $("#search").click(function () {
+                    var pageNo = $("#pn_input").val();
+                    location.href="${pageScope.basePath}manage/bookServlet?action=page&pageNo="+pageNo;
+                })
+            })
+        </script>
     </div>
 </div>
 

@@ -21,4 +21,16 @@ public class Page<T> {
     private Integer pageTotalCount;
     // 当前页数据
     private List<T> items;
+
+    public void setPageNo(Integer pageNo) {
+        if (pageNo < 1) {
+            this.pageNo = 1;
+        }else if (pageNo > this.pageTotal) {
+            this.pageNo = this.pageTotal;
+        }else{
+            this.pageNo = pageNo;
+        }
+//        this.pageNo = pageNo<1?1:pageNo;
+//        this.pageNo = pageNo>this.pageTotal?this.pageTotal:pageNo;
+    }
 }
