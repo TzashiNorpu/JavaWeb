@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="bookstore01:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37b87b1e-ce1a-4d66-83f4-dea518cce042" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore01/src/com/tz/web/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/web/BaseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore01/src/com/tz/web/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/web/BookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore01/src/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore01/web/pages/manager/book_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/web/pages/manager/book_manager.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1caJCWZmBMjkY4B1eW8eutUPaMQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+  </component>
+  <component name="RunManager" selected="Tomcat Server.bookstore">
+    <configuration name="JdbcUtilsTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bookstore01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.tz.test.JdbcUtilsTest" />
+      <option name="METHOD_NAME" value="getConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bookstore" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="bookstore01:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_JavaWeb_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="45495" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="bookstore01:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.JdbcUtilsTest.getConnection" />
+      <item itemvalue="Tomcat Server.bookstore" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JdbcUtilsTest.getConnection" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37b87b1e-ce1a-4d66-83f4-dea518cce042" name="Default Changelist" comment="" />
+      <created>1590760643597</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590760643597</updated>
+      <workItem from="1590760648366" duration="11825000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="761" y="430" width="453" height="243" key="#Tomcat_Server" timestamp="1590797342329">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="761" y="430" width="453" height="243" key="#Tomcat_Server/67.27.1853.1053@67.27.1853.1053" timestamp="1590797342329" />
+    <state x="451" y="210" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590800269827">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="451" y="210" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1590800269827" />
+    <state x="770" y="295" width="424" height="513" key="FileChooserDialogImpl" timestamp="1590797340241">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="770" y="295" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1590797340241" />
+    <state width="1244" height="500" key="GridCell.Tab.0.bottom" timestamp="1590856591044">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591044" />
+    <state width="1244" height="500" key="GridCell.Tab.0.center" timestamp="1590856591044">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591044" />
+    <state width="1244" height="500" key="GridCell.Tab.0.left" timestamp="1590856591043">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591043" />
+    <state width="1244" height="500" key="GridCell.Tab.0.right" timestamp="1590856591044">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591044" />
+    <state width="1244" height="500" key="GridCell.Tab.1.bottom" timestamp="1590856591045">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591045" />
+    <state width="1244" height="500" key="GridCell.Tab.1.center" timestamp="1590856591045">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591045" />
+    <state width="1244" height="500" key="GridCell.Tab.1.left" timestamp="1590856591045">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591045" />
+    <state width="1244" height="500" key="GridCell.Tab.1.right" timestamp="1590856591045">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591045" />
+    <state width="1244" height="500" key="GridCell.Tab.2.bottom" timestamp="1590856591045">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.2.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591045" />
+    <state width="1244" height="500" key="GridCell.Tab.2.center" timestamp="1590856591044">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.2.center/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591044" />
+    <state width="1244" height="500" key="GridCell.Tab.2.left" timestamp="1590856591044">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.2.left/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591044" />
+    <state width="1244" height="500" key="GridCell.Tab.2.right" timestamp="1590856591045">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="500" key="GridCell.Tab.2.right/67.27.1853.1053@67.27.1853.1053" timestamp="1590856591045" />
+    <state width="1244" height="278" key="GridCell.Tab.3.bottom" timestamp="1590854350710">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="278" key="GridCell.Tab.3.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1590854350710" />
+    <state width="1244" height="278" key="GridCell.Tab.3.center" timestamp="1590854350707">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="278" key="GridCell.Tab.3.center/67.27.1853.1053@67.27.1853.1053" timestamp="1590854350707" />
+    <state width="1244" height="278" key="GridCell.Tab.3.left" timestamp="1590854350707">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="278" key="GridCell.Tab.3.left/67.27.1853.1053@67.27.1853.1053" timestamp="1590854350707" />
+    <state width="1244" height="278" key="GridCell.Tab.3.right" timestamp="1590854350710">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1244" height="278" key="GridCell.Tab.3.right/67.27.1853.1053@67.27.1853.1053" timestamp="1590854350710" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1590800150441">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/67.27.1853.1053@67.27.1853.1053" timestamp="1590800150441" />
+    <state x="476" y="130" width="1442" height="845" key="SettingsEditor" timestamp="1590820043616">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="476" y="130" width="1442" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1590820043616" />
+    <state x="845" y="293" width="287" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590800351598">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="845" y="293" width="287" height="518" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1590800351598" />
+  </component>
+</project>
