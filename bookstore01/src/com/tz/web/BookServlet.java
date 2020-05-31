@@ -24,7 +24,9 @@ public class BookServlet extends BaseServlet {
         bookService.addBook(book);
         // 不能用转发，不然浏览器刷新时会重新提交增加图书的请求
 //        req.getRequestDispatcher("/manager/bookServlet?action=list").forward(req,resp);
-        resp.sendRedirect(req.getContextPath() + "/manage/bookServlet?action=list");
+        int pageNo = WebUtils.parseInt(req.getParameter("pageNo"), 0);
+//        添加了一项后总页数增加时返回更新后的总页数，添加一项后总页数不发生变化返回的是当前的最大页数
+        resp.sendRedirect(req.getContextPath() + "/manage/bookServlet?action=page&pageNo=" + (++pageNo));
     }
 
     protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -34,20 +36,24 @@ public class BookServlet extends BaseServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        resp.sendRedirect(req.getContextPath() + "/manage/bookServlet?action=list");
+        int pageNo = WebUtils.parseInt(req.getParameter("pageNo"), 0);
+        resp.sendRedirect(req.getContextPath() + "/manage/bookServlet?action=page&pageNo=" + pageNo);
     }
 
     protected void get(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String id = req.getParameter("id");
         Book book = bookService.queryBookById(Integer.parseInt(id));
         req.setAttribute("book", book);
+//        这里不用加pageNo，req中此时已经有pageNo了
+//        int pageNo = WebUtils.parseInt(req.getParameter("pageNo"), 0);
         req.getRequestDispatcher("/pages/manager/book_edit.jsp").forward(req, resp);
     }
 
     protected void update(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Book book = WebUtils.copyParamsToBean(req.getParameterMap(), new Book());
         bookService.updateBook(book);
-        resp.sendRedirect(req.getContextPath() + "/manage/bookServlet?action=list");
+        int pageNo = WebUtils.parseInt(req.getParameter("pageNo"), 0);
+        resp.sendRedirect(req.getContextPath() + "/manage/bookServlet?action=page&pageNo=" + pageNo);
     }
 
     protected void list(HttpServletRequest req, HttpServletResponse resp) throws ServletException,
@@ -76,6 +82,6 @@ public class BookServlet extends BaseServlet {
         //3 保存 Page 对象到 Request 域中
         req.setAttribute("page", page);
         //4 请求转发到 pages/manager/book_manager.jsp 页面
-        req.getRequestDispatcher("/pages/manager/book_manager.jsp").forward(req,resp);
+        req.getRequestDispatcher("/pages/manager/book_manager.jsp").forward(req, resp);
     }
 }

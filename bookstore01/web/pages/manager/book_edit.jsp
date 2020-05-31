@@ -33,6 +33,7 @@
 <%--        <input type="hidden" name="action" value="${empty param.id ? "add":"update"}">--%>
         <input type="hidden" name="action" value="${empty requestScope.book ? "add":"update"}">
         <input type="hidden" name="id" value="${requestScope.book.id}">
+        <input type="hidden" name="pageNo" value="${param.pageNo}">
         <table>
             <tr>
                 <td>名称</td>

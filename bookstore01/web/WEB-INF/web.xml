@@ -42,4 +42,13 @@
         <url-pattern>/manage/bookServlet</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>clientBookServlet</servlet-name>
+        <servlet-class>com.tz.web.ClientBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>clientBookServlet</servlet-name>
+        <url-pattern>/client/bookServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
