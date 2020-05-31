@@ -10,18 +10,27 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 public class BookServlet extends BaseServlet {
     BookDao bookService = new BookDaoImpl();
 
     protected void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Map<String, String[]> parameterMap = req.getParameterMap();
         Book book = WebUtils.copyParamsToBean(req.getParameterMap(), new Book());
         bookService.addBook(book);
+        // 不能用转发，不然浏览器刷新时会重新提交增加图书的请求
 //        req.getRequestDispatcher("/manager/bookServlet?action=list").forward(req,resp);
         resp.sendRedirect(req.getContextPath()+"/manage/bookServlet?action=list");
     }
     protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        String id = req.getParameter("id");
+        try {
+            bookService.deleteBookById(Integer.parseInt(id));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        resp.sendRedirect("/manage/bookServlet?action=delete");
     }
     protected void update(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 

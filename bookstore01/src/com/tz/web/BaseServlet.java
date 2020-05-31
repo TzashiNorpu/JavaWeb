@@ -10,6 +10,7 @@ import java.lang.reflect.Method;
 public abstract class BaseServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
         String action = req.getParameter("action");
         System.out.println("++++"+action);
         try {
@@ -24,6 +25,7 @@ public abstract class BaseServlet extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
         doPost(req,resp);
     }
 }
