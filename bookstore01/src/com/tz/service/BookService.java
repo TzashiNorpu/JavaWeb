@@ -13,4 +13,5 @@ public interface BookService {
         public List<Book> queryBooks();
 
         public Page<Book> page(int pageNo, int pageSize);
+        public Page<Book> page(int pageNo, int pageSize,int minPrice,int maxPrice);
 }

@@ -80,6 +80,7 @@ public class BookServlet extends BaseServlet {
         //2 调用 BookService.page(pageNo，pageSize)：Page 对象
         Page<Book> page = bookService.page(pageNo, pageSize);
         //3 保存 Page 对象到 Request 域中
+        page.setUrl("manage/bookServlet?action=page");
         req.setAttribute("page", page);
         //4 请求转发到 pages/manager/book_manager.jsp 页面
         req.getRequestDispatcher("/pages/manager/book_manager.jsp").forward(req, resp);

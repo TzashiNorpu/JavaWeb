@@ -1,4 +1,4 @@
-package com.tz.web;
+package com.tz.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

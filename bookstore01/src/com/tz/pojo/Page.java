@@ -21,6 +21,8 @@ public class Page<T> {
     private Integer pageTotalCount;
     // 当前页数据
     private List<T> items;
+    // 分页抽取时存储请求地址
+    private String url;
 
     public void setPageNo(Integer pageNo) {
         if (pageNo < 1) {
