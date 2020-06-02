@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
+import static com.google.code.kaptcha.Constants.KAPTCHA_SESSION_KEY;
+
 public class UserServlet extends BaseServlet {
 //    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //        String action = request.getParameter("action");
@@ -41,29 +43,48 @@ public class UserServlet extends BaseServlet {
         User user = us.login(new User(null, username, password, null));
 
         request.setAttribute("username", username);
-        User user1 = WebUtils.copyParamsToBean(request.getParameterMap(),new User());
+        User user1 = WebUtils.copyParamsToBean(request.getParameterMap(), new User());
 
         if (user == null) {
             request.setAttribute("msg", "用户名或密码错误");
             request.getRequestDispatcher("/pages/user/login.jsp").forward(request, response);
         } else {
+            request.getSession().setAttribute("user", user);
             request.getRequestDispatcher("/pages/user/login_success.jsp").forward(request, response);
         }
+    }
+
+    protected void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getSession().invalidate();
+        response.sendRedirect(request.getContextPath() + "/index.jsp");
     }
 
     protected void regist(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String email = request.getParameter("email");
+
+        String code = request.getParameter("code");
+        String token = (String) request.getSession().getAttribute(KAPTCHA_SESSION_KEY);
+        request.getSession().removeAttribute(KAPTCHA_SESSION_KEY);
+
         request.setAttribute("username", username);
         request.setAttribute("email", email);
 //        System.out.println(username);
-        if (us.existsUsername(username)) {
-            request.setAttribute("msg", "用户名已存在");
-            request.getRequestDispatcher("/pages/user/regist.jsp").forward(request, response);
+        if (token != null && token.equalsIgnoreCase(code)) {
+            if (us.existsUsername(username)) {
+                request.setAttribute("msg", "用户名已存在");
+                request.getRequestDispatcher("/pages/user/regist.jsp").forward(request, response);
+            } else {
+                User user = new User(null, username, password, email);
+                us.registUser(user);
+                request.getSession().setAttribute("user",user);
+                request.getRequestDispatcher("/pages/user/regist_success.jsp").forward(request, response);
+            }
         } else {
-            us.registUser(new User(null, username, password, email));
-            request.getRequestDispatcher("/pages/user/regist_success.jsp").forward(request, response);
+            request.setAttribute("msg", "验证码错误！！");
+            System.out.println("验证码[" + code + "]错误");
+            request.getRequestDispatcher("/pages/user/regist.jsp").forward(request, response);
         }
     }
 }

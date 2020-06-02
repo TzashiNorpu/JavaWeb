@@ -7,8 +7,24 @@
         <servlet-name>CookieServlet</servlet-name>
         <servlet-class>com.tz.servlet.CookieServlet</servlet-class>
     </servlet>
+    
     <servlet-mapping>
         <servlet-name>CookieServlet</servlet-name>
         <url-pattern>/cookieServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>com.tz.servlet.SessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/sessionServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--表示当前web工程。创建出来 的所有Session默认是20分钟 超时时长-->
+    <session-config>
+        <session-timeout>60</session-timeout>
+    </session-config>
+
 </web-app>
