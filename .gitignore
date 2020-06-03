@@ -1,4 +1,4 @@
 # Project exclude paths
 /out/
-/bookstore01/web/WEB-INF/li
-/.idea
+/bookstore01/web/WEB-INF/lib/
+/.idea/
