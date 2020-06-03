@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -23,37 +24,40 @@
 <div id="main">
 
     <table>
-        <tr>
-            <td>日期</td>
-            <td>金额</td>
-            <td>状态</td>
-            <td>详情</td>
-        </tr>
-        <tr>
-            <td>2015.04.23</td>
-            <td>90.00</td>
-            <td>未发货</td>
-            <td><a href="#">查看详情</a></td>
-        </tr>
+        <c:if test="${not empty sessionScope.orders}">
+            <tr>
+                <td>日期</td>
+                <td>金额</td>
+                <td>状态</td>
+                <td>详情</td>
+            </tr>
+            <c:forEach items="${sessionScope.orders}" var="order">
+                <tr>
+                    <td>${order.createTime}</td>
+                    <td>${order.price}</td>
+                    <td>${order.status}</td>
+                    <td><a href="orderServlet?action=showOrderDetail&orderId=${order.orderId}">查看详情</a></td>
+                </tr>
+            </c:forEach>
+        </c:if>
+        <%--        <tr>--%>
+        <%--            <td>2015.04.20</td>--%>
+        <%--            <td>20.00</td>--%>
+        <%--            <td>已发货</td>--%>
+        <%--            <td><a href="#">查看详情</a></td>--%>
+        <%--        </tr>--%>
 
-        <tr>
-            <td>2015.04.20</td>
-            <td>20.00</td>
-            <td>已发货</td>
-            <td><a href="#">查看详情</a></td>
-        </tr>
-
-        <tr>
-            <td>2014.01.23</td>
-            <td>190.00</td>
-            <td>已完成</td>
-            <td><a href="#">查看详情</a></td>
-        </tr>
+        <%--        <tr>--%>
+        <%--            <td>2014.01.23</td>--%>
+        <%--            <td>190.00</td>--%>
+        <%--            <td>已完成</td>--%>
+        <%--            <td><a href="#">查看详情</a></td>--%>
+        <%--        </tr>--%>
     </table>
 
 
 </div>
 
-<%@include file="/pages/common/footer.jsp"%>
+<%@include file="/pages/common/footer.jsp" %>
 </body>
 </html>
