@@ -5,16 +5,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+
+/**
+ * 购物车的商品项
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Book {
+public class CartItem {
     private Integer id;
     private String name;
-    private String author;
+    private Integer count;
     private BigDecimal price;
-    private Integer sales;
-    private Integer stock;
-    private String imgPath = "static/img/default.jpg";
+    private BigDecimal totalPrice;
 }
-
