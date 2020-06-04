@@ -22,6 +22,8 @@ public abstract class BaseServlet extends HttpServlet {
             method.invoke(this, req, resp);
         } catch (Exception e) {
             e.printStackTrace();
+            // 为了让filter捕获异常，需要将其抛出
+            throw new RuntimeException(e);
         }
     }
     @Override

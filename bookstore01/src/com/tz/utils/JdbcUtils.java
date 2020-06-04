@@ -11,6 +11,7 @@ import java.util.Properties;
 public class JdbcUtils {
 
     private static DruidDataSource dataSource;
+    private static ThreadLocal<Connection> threadLocalConns = new ThreadLocal<>();
 
     static {
         try {
@@ -39,11 +40,23 @@ public class JdbcUtils {
      */
     public static Connection getConnection() {
 
-        Connection conn = null;
-
+//        Connection conn = null;
+//
+//        try {
+//            conn = dataSource.getConnection();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        return conn;
+        Connection conn = threadLocalConns.get();
         try {
-            conn = dataSource.getConnection();
-        } catch (Exception e) {
+            if (conn == null) {
+                conn = dataSource.getConnection();
+                threadLocalConns.set(conn);
+                conn.setAutoCommit(false);
+            }
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
@@ -55,14 +68,48 @@ public class JdbcUtils {
      *
      * @param conn
      */
-    public static void close(Connection conn) {
-        if (conn != null) {
-            try {
-                conn.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
+//    public static void close(Connection conn) {
+//        if (conn != null) {
+//            try {
+//                conn.close();
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    }
+
+    /**
+     * 提交事务，并关闭释放连接
+     */
+    public static void commitAndClose() {
+        Connection connection = threadLocalConns.get();
+        try {
+            if (connection != null) { // 如果不等于 null，说明 之前使用过连接，操作过数据库
+                connection.commit(); // 提交 事务
+                connection.close(); // 关闭连接，资源资源
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
+
+        // 一定要执行 remove 操作，否则就会出错。（因为 Tomcat 服务器底层使用了线程池技术）
+        threadLocalConns.remove();
     }
 
+    /**
+     * 回滚事务，并关闭释放连接
+     */
+    public static void rollbackAndClose() throws SQLException {
+        Connection connection = threadLocalConns.get();
+        try {
+            if (connection != null) { // 如果不等于 null，说明 之前使用过连接，操作过数据库
+                connection.rollback();//回滚事务
+                connection.close(); // 关闭连接，资源资源
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        // 一定要执行 remove 操作，否则就会出错。（因为 Tomcat 服务器底层使用了线程池技术）
+        threadLocalConns.remove();
+    }
 }
