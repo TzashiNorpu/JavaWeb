@@ -1,5 +1,6 @@
 package com.tz.web;
 
+import com.google.gson.Gson;
 import com.tz.pojo.User;
 import com.tz.service.UserService;
 import com.tz.service.impl.UserServiceImpl;
@@ -11,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 
 import static com.google.code.kaptcha.Constants.KAPTCHA_SESSION_KEY;
 
@@ -57,6 +60,20 @@ public class UserServlet extends BaseServlet {
     protected void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getSession().invalidate();
         response.sendRedirect(request.getContextPath() + "/index.jsp");
+    }
+
+    protected void ajxExistUsername(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        // 调用 userService.xistUsername();
+        boolean existUsername = us.existsUsername(username);
+        // 把返回的结果封装成为 map 对象
+        System.out.println(username);
+        System.out.println(existUsername);
+        Map<String,Object> resultMap = new HashMap<>();
+        resultMap.put("existUsername",existUsername);
+        Gson gson = new Gson();
+        String json = gson.toJson(resultMap);
+        response.getWriter().write(json);
     }
 
     protected void regist(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

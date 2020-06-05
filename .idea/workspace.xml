@@ -7,20 +7,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d962205d-9dc2-4b12-b180-fadc3e7df74e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/web/TransactionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstore01/web/pages/error/error404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstore01/web/pages/error/error500.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/src/com/tz/json/PersonListType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/src/com/tz/json/PersonMapType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/src/com/tz/json/jsonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/src/com/tz/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/src/com/tz/servlet/AjaxServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/src/com/tz/servlet/BaseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/WEB-INF/lib/gson-2.2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/WEB-INF/lib/lombok.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/WEB-INF/lib/taglibs-standard-impl-1.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/WEB-INF/lib/taglibs-standard-spec-1.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/i18n.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/i18n_fmt.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/jQueryAjax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonAndAjax/web/script/jquery-1.7.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/test_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/tt_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/bookstore01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/bookstore01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/testLib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore01/src/com/tz/dao/impl/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/dao/impl/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore01/src/com/tz/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore01/src/com/tz/utils/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/utils/JdbcUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore01/src/com/tz/web/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/web/BaseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore01/src/com/tz/web/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/web/CartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore01/src/com/tz/web/TransactionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/web/TransactionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore01/src/com/tz/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/com/tz/web/UserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstore01/src/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/src/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstore01/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore01/web/pages/client/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/web/pages/client/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore01/web/pages/user/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore01/web/pages/user/regist.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,8 +110,8 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bookstore01" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bookstore01/web/WEB-INF/lib/gson-2.2.4.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -85,22 +125,22 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaWeb\bookstore01\src\com\tz\dao\" />
+      <recent name="D:\JavaWeb\bookstore01\web" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.tz.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaWeb\bookstore01\web\WEB-INF\lib" />
-      <recent name="D:\JavaWeb\cookie_session\web\pages" />
-      <recent name="D:\JavaWeb\bookstore01\src\com\tz\dao\impl" />
-      <recent name="D:\JavaWeb\bookstore01\src\com\tz\utils" />
-      <recent name="D:\JavaWeb\bookstore01\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tz.servlet" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaWeb\bookstore01\src\com\tz\dao\" />
-      <recent name="D:\JavaWeb\bookstore01\web" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaWeb\bookstore01\web\WEB-INF\lib" />
+      <recent name="D:\JavaWeb\jsonAndAjax\web\WEB-INF\lib" />
+      <recent name="D:\JavaWeb\jsonAndAjax\web" />
+      <recent name="D:\JavaWeb\bookstore01\web\pages\error" />
+      <recent name="D:\JavaWeb\cookie_session\web\pages" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.bookstore01">
@@ -122,54 +162,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
-    </configuration>
-    <configuration name="CartTest.addItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bookstore01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tz.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tz.test" />
-      <option name="MAIN_CLASS_NAME" value="com.tz.test.CartTest" />
-      <option name="METHOD_NAME" value="addItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderDaoImplTest.saveOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bookstore01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tz.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tz.test" />
-      <option name="MAIN_CLASS_NAME" value="com.tz.test.OrderDaoImplTest" />
-      <option name="METHOD_NAME" value="saveOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderItemDaoImplTest.saveOrderItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bookstore01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tz.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tz.test" />
-      <option name="MAIN_CLASS_NAME" value="com.tz.test.OrderItemDaoImplTest" />
-      <option name="METHOD_NAME" value="saveOrderItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="OrderServiceImplTest.createOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bookstore01" />
@@ -198,6 +190,54 @@
       <option name="PACKAGE_NAME" value="com.tz.test" />
       <option name="MAIN_CLASS_NAME" value="com.tz.test.OrderServiceImplTest" />
       <option name="METHOD_NAME" value="showMyOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsonTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jsonAndAjax" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tz.json.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tz.json" />
+      <option name="MAIN_CLASS_NAME" value="com.tz.json.jsonTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsonTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jsonAndAjax" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tz.json.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tz.json" />
+      <option name="MAIN_CLASS_NAME" value="com.tz.json.jsonTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsonTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jsonAndAjax" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tz.json.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tz.json" />
+      <option name="MAIN_CLASS_NAME" value="com.tz.json.jsonTest" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -354,6 +394,7 @@
       </method>
     </configuration>
     <configuration name="filter" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 " />
       <deployment>
         <artifact name="filter:war exploded">
           <settings>
@@ -492,31 +533,137 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsonAndAjax" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 " />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="jsonAndAjax:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/jsonAndAjax" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_46_JavaWeb_5" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="6915" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="test:war exploded" />
+          <artifact name="jsonAndAjax:war exploded" />
         </option>
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CartTest.addItem" />
-      <item itemvalue="JUnit.OrderDaoImplTest.saveOrder" />
-      <item itemvalue="JUnit.OrderItemDaoImplTest.saveOrderItem" />
       <item itemvalue="JUnit.OrderServiceImplTest.createOrder" />
       <item itemvalue="JUnit.OrderServiceImplTest.showMyOrder" />
+      <item itemvalue="JUnit.jsonTest.test1" />
+      <item itemvalue="JUnit.jsonTest.test2" />
+      <item itemvalue="JUnit.jsonTest.test3" />
       <item itemvalue="Tomcat Server.javaWebTest" />
       <item itemvalue="Tomcat Server.bookstore01" />
       <item itemvalue="Tomcat Server.cookie_session" />
       <item itemvalue="Tomcat Server.filter" />
+      <item itemvalue="Tomcat Server.jsonAndAjax" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.jsonTest.test3" />
+        <item itemvalue="JUnit.jsonTest.test2" />
+        <item itemvalue="JUnit.jsonTest.test1" />
         <item itemvalue="JUnit.OrderServiceImplTest.showMyOrder" />
         <item itemvalue="JUnit.OrderServiceImplTest.createOrder" />
-        <item itemvalue="JUnit.OrderItemDaoImplTest.saveOrderItem" />
-        <item itemvalue="JUnit.OrderDaoImplTest.saveOrder" />
-        <item itemvalue="JUnit.CartTest.addItem" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.16175507" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:bookstore" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -602,10 +749,10 @@
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state x="1758" y="110" key="#Web_Browsers/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1588128346425" />
-    <state x="1620" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591252491278">
+    <state x="1620" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591343730605">
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
-    <state x="1620" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591252491278" />
+    <state x="1620" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591343730605" />
     <state x="305" y="124" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591188575983" />
     <state x="1971" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1591253121076">
       <screen x="1366" y="0" width="1600" height="900" />
@@ -637,10 +784,10 @@
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state x="1920" y="167" key="DetectedRootsChooserDialog/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1588043103205" />
-    <state x="1863" y="219" key="FileChooserDialogImpl" timestamp="1591152228954">
+    <state x="1863" y="219" key="FileChooserDialogImpl" timestamp="1591344524675">
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
-    <state x="1863" y="219" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591152228954" />
+    <state x="1863" y="219" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591344524675" />
     <state x="546" y="261" key="Github.ShareDialog" timestamp="1590487508292">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -649,101 +796,101 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="71" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590487553876" />
-    <state width="1571" height="481" key="GridCell.Tab.0.bottom" timestamp="1591279567908">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.0.bottom" timestamp="1591351416214">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570284" />
-    <state width="1279" height="135" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558604" />
+    <state width="1279" height="269" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416214" />
     <state width="1571" height="481" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279567908" />
-    <state width="1571" height="481" key="GridCell.Tab.0.center" timestamp="1591279567908">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.0.center" timestamp="1591351416214">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570283" />
-    <state width="1279" height="135" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558604" />
+    <state width="1279" height="269" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416214" />
     <state width="1571" height="481" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279567908" />
-    <state width="1571" height="481" key="GridCell.Tab.0.left" timestamp="1591279567908">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.0.left" timestamp="1591351416213">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570283" />
-    <state width="1279" height="135" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558604" />
+    <state width="1279" height="269" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416213" />
     <state width="1571" height="481" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279567908" />
-    <state width="1571" height="481" key="GridCell.Tab.0.right" timestamp="1591279567908">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.0.right" timestamp="1591351416214">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570284" />
-    <state width="1279" height="135" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558604" />
+    <state width="1279" height="269" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416214" />
     <state width="1571" height="481" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279567908" />
-    <state width="1571" height="481" key="GridCell.Tab.1.bottom" timestamp="1591279483449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.1.bottom" timestamp="1591351416215">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570284" />
-    <state width="1279" height="135" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558439" />
+    <state width="1279" height="269" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416215" />
     <state width="1571" height="481" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279483449" />
-    <state width="1571" height="481" key="GridCell.Tab.1.center" timestamp="1591279483449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.1.center" timestamp="1591351416215">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570284" />
-    <state width="1279" height="135" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558439" />
+    <state width="1279" height="269" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416215" />
     <state width="1571" height="481" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279483449" />
-    <state width="1571" height="481" key="GridCell.Tab.1.left" timestamp="1591279483449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.1.left" timestamp="1591351416214">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570284" />
-    <state width="1279" height="135" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558438" />
+    <state width="1279" height="269" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416214" />
     <state width="1571" height="481" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279483449" />
-    <state width="1571" height="481" key="GridCell.Tab.1.right" timestamp="1591279483449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.1.right" timestamp="1591351416215">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570284" />
-    <state width="1279" height="135" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558439" />
+    <state width="1279" height="269" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416215" />
     <state width="1571" height="481" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279483449" />
-    <state width="1571" height="481" key="GridCell.Tab.2.bottom" timestamp="1591279483449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.2.bottom" timestamp="1591351416216">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.2.bottom/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570285" />
-    <state width="1279" height="135" key="GridCell.Tab.2.bottom/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558440" />
+    <state width="1279" height="269" key="GridCell.Tab.2.bottom/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416216" />
     <state width="1571" height="481" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279483449" />
-    <state width="1571" height="481" key="GridCell.Tab.2.center" timestamp="1591279483449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.2.center" timestamp="1591351416215">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.2.center/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570284" />
-    <state width="1279" height="135" key="GridCell.Tab.2.center/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558439" />
+    <state width="1279" height="269" key="GridCell.Tab.2.center/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416215" />
     <state width="1571" height="481" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279483449" />
-    <state width="1571" height="481" key="GridCell.Tab.2.left" timestamp="1591279483449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.2.left" timestamp="1591351416215">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.2.left/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570284" />
-    <state width="1279" height="135" key="GridCell.Tab.2.left/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558439" />
+    <state width="1279" height="269" key="GridCell.Tab.2.left/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416215" />
     <state width="1571" height="481" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279483449" />
-    <state width="1571" height="481" key="GridCell.Tab.2.right" timestamp="1591279483449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="269" key="GridCell.Tab.2.right" timestamp="1591351416216">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="231" key="GridCell.Tab.2.right/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590977570284" />
-    <state width="1279" height="135" key="GridCell.Tab.2.right/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591264558439" />
+    <state width="1279" height="269" key="GridCell.Tab.2.right/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591351416216" />
     <state width="1571" height="481" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591279483449" />
-    <state width="1571" height="481" key="GridCell.Tab.3.bottom" timestamp="1591192551503">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="392" key="GridCell.Tab.3.bottom" timestamp="1591350954147">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="376" key="GridCell.Tab.3.bottom/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590486335009" />
-    <state width="1279" height="286" key="GridCell.Tab.3.bottom/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591167788282" />
+    <state width="1279" height="392" key="GridCell.Tab.3.bottom/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591350954147" />
     <state width="1571" height="481" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591192551503" />
-    <state width="1571" height="481" key="GridCell.Tab.3.center" timestamp="1591192551503">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="392" key="GridCell.Tab.3.center" timestamp="1591350954147">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="376" key="GridCell.Tab.3.center/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590486335009" />
-    <state width="1279" height="286" key="GridCell.Tab.3.center/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591167788281" />
+    <state width="1279" height="392" key="GridCell.Tab.3.center/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591350954147" />
     <state width="1571" height="481" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591192551503" />
-    <state width="1571" height="481" key="GridCell.Tab.3.left" timestamp="1591192551503">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="392" key="GridCell.Tab.3.left" timestamp="1591350954147">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="376" key="GridCell.Tab.3.left/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590486335008" />
-    <state width="1279" height="286" key="GridCell.Tab.3.left/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591167788281" />
+    <state width="1279" height="392" key="GridCell.Tab.3.left/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591350954147" />
     <state width="1571" height="481" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591192551503" />
-    <state width="1571" height="481" key="GridCell.Tab.3.right" timestamp="1591192551503">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1279" height="392" key="GridCell.Tab.3.right" timestamp="1591350954147">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state width="1083" height="376" key="GridCell.Tab.3.right/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590486335009" />
-    <state width="1279" height="286" key="GridCell.Tab.3.right/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591167788282" />
+    <state width="1279" height="392" key="GridCell.Tab.3.right/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591350954147" />
     <state width="1571" height="481" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591192551503" />
     <state width="1083" height="376" key="GridCell.Tab.4.bottom" timestamp="1590486333314">
       <screen x="0" y="0" width="1366" height="728" />
@@ -761,24 +908,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1083" height="376" key="GridCell.Tab.4.right/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590486333314" />
-    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1591188323226">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="220" height="413" key="HiddenNamespacesPopup" timestamp="1591318543106">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
+    <state width="220" height="413" key="HiddenNamespacesPopup/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591318543106" />
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591188323226" />
-    <state x="1669" y="53" key="SettingsEditor" timestamp="1591152484058">
+    <state x="1669" y="53" key="SettingsEditor" timestamp="1591344526324">
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state x="259" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1600.900@0.0.1366.728" timestamp="1590551179218" />
-    <state x="1669" y="53" key="SettingsEditor/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591152484058" />
+    <state x="1669" y="53" key="SettingsEditor/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591344526324" />
     <state x="364" y="61" key="SettingsEditor/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591014697717" />
     <state x="1887" y="180" width="540" height="524" key="StructurePopup" timestamp="1591148085540">
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state x="1887" y="180" width="540" height="524" key="StructurePopup/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591148085540" />
-    <state width="598" height="516" key="SwitcherDM" timestamp="1591278612243">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1591340232377">
+      <screen x="1366" y="0" width="1600" height="900" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591151537006" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591340232377" />
     <state width="598" height="516" key="SwitcherDM/0.0.1920.1040/-1920.9.1920.1040@0.0.1920.1040" timestamp="1591278612243" />
     <state x="1688" y="122" key="Vcs.Push.Dialog.v2" timestamp="1590659788160">
       <screen x="1366" y="0" width="1600" height="900" />
@@ -807,10 +955,10 @@
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
     <state x="1867" y="251" key="git4idea.merge.GitPullDialog/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1590721254026" />
-    <state x="1536" y="65" key="new project wizard" timestamp="1591252460480">
+    <state x="1536" y="65" key="new project wizard" timestamp="1591321931040">
       <screen x="1366" y="0" width="1600" height="900" />
     </state>
-    <state x="1536" y="65" key="new project wizard/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591252460480" />
+    <state x="1536" y="65" key="new project wizard/0.0.1366.728/1366.0.1600.900@1366.0.1600.900" timestamp="1591321931040" />
     <state x="556" y="220" width="807" height="784" key="search.everywhere.popup" timestamp="1591193297231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -829,6 +977,16 @@
           <url>file://$PROJECT_DIR$/bookstore01/src/com/tz/web/OrderServlet.java</url>
           <line>49</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bookstore01/src/com/tz/web/BaseServlet.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bookstore01/src/com/tz/web/CartServlet.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

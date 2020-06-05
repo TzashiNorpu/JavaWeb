@@ -8,8 +8,22 @@
     <script type="text/javascript">
         // 页面加载完成之后
         $(function () {
+            $("#username").blur(function () {
+                //1 获取用户名
+                var username = this.value;
+                $.getJSON("${basePath}userServlet", "action=ajxExistUsername&username=" + username, function (data) {
+                    // alert(data.existUsername);
+                    console.log(data.existUsername);
+                    if (data.existUsername) {
+                        // console.log("jjj");
+                        $("span.errorMsg").text("用户名已存在！");
+                    } else {
+                        $("span.errorMsg").text("用户名可用！");
+                    }
+                });
+            });
             $("#code_img").click(function () {
-                this.src = "${basePath}kaptcha.jpg?d="+new Date();
+                this.src = "${basePath}kaptcha.jpg?d=" + new Date();
             });
             // 给注册绑定单击事件
             $("#sub_btn").click(function () {
@@ -22,7 +36,6 @@
                 if (!usernamePatt.test(usernameText)) {
                     //4 提示用户结果
                     $("span.errorMsg").text("用户名不合法！");
-
                     return false;
                 }
 
@@ -59,7 +72,6 @@
                 if (!emailPatt.test(emailText)) {
                     //4 提示用户
                     $("span.errorMsg").text("邮箱格式不合法！");
-
                     return false;
                 }
 
@@ -146,7 +158,8 @@
                         <br/>
                         <label>验证码：</label>
                         <input class="itxt" type="text" name="code" style="width: 90px;" id="code"/>
-                        <img alt="" src="kaptcha.jpg" id="code_img" style="float: right; margin-right: 40px; height: 33px;width: 110px;">
+                        <img alt="" src="kaptcha.jpg" id="code_img"
+                             style="float: right; margin-right: 40px; height: 33px;width: 110px;">
                         <br/>
                         <br/>
                         <input type="submit" value="注册" id="sub_btn"/>

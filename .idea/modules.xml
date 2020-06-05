@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/bookstore01/bookstore01.iml" filepath="$PROJECT_DIR$/bookstore01/bookstore01.iml" />
       <module fileurl="file://$PROJECT_DIR$/cookie_session/cookie_session.iml" filepath="$PROJECT_DIR$/cookie_session/cookie_session.iml" />
       <module fileurl="file://$PROJECT_DIR$/filter/filter.iml" filepath="$PROJECT_DIR$/filter/filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonAndAjax/jsonAndAjax.iml" filepath="$PROJECT_DIR$/jsonAndAjax/jsonAndAjax.iml" />
     </modules>
   </component>
 </project>

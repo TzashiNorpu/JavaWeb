@@ -22,6 +22,8 @@ public class TransactionFilter implements Filter {
                 throwables.printStackTrace();
             }
             e.printStackTrace();
+            // 把异常抛出给Tomcat
+            throw new RuntimeException(e);
         }
     }
 

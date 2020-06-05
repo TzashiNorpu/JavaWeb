@@ -7,12 +7,30 @@
     <title>书城首页</title>
     <%@ include file="/pages/common/header.jsp" %>
     <script type="text/javascript">
+        <%--$(function () {--%>
+        <%--    $("button.addToCart").click(function () {--%>
+        <%--        let bookid = $(this).attr("bookId");--%>
+        <%--        location.href = "${basePath}cartServlet?action=addItem&id=" + bookid;--%>
+        <%--    })--%>
+        <%--});--%>
         $(function () {
+            // ajax 添加至购物车
             $("button.addToCart").click(function () {
-                let bookid = $(this).attr("bookId");
-                location.href = "${basePath}cartServlet?action=addItem&id=" + bookid;
-            })
-        })
+                /*
+                * 在事件响应的 function 函数 中，有一个 this 对象，这个 this 对象，是当前正在响应事件的 dom 对象
+                * @type {jQuery}
+                */
+                var bookId = $(this).attr("bookId");
+                // 发 ajax 请求，添加商品到购物车
+                $.getJSON("${basePath}cartServlet", "action=ajxAddItem&id=" + bookId,
+                    function (data) {
+                        console.log("data.totalCount=" + data.totalCount);
+                        console.log("data.lastName=" + data.lastName);
+                        $("#cartTotalCount").text("您的购物车中有 " + data.totalCount + " 件商品");
+                        $("#cartLastName").text(data.lastName);
+                    })
+            });
+        });
     </script>
 </head>
 <body>
@@ -45,18 +63,37 @@
         </div>
 
         <div style="text-align: center">
+            <%--            ajax 也要用这种模式，不然翻页有问题--%>
             <c:if test="${empty sessionScope.cart.items }">
-                <span></span>
+                <span id="cartTotalCount"></span>
+                <%--                span 上不加 id 的话只能从 session 中进行更新，因为此时是 ajax 请求， session 中数据的修改没有带到当前这个页面，因此当前这个页面不知道 session--%>
+                <%--                中的数据内容进行了修改，从而也不能根据 session 做 if 判断来动态渲染 这两个节点。因此只能通过给这两个 c-if 的元素加上相同的 id ，通过 ajax 来进行更新--%>
+<%--                换页添加购物车时就可以得到 session 从而重新进行渲染--%>
+                <%--                <span></span>--%>
                 <div>
-                    <span style="color: red">当前购物车为空</span>
+                    <span style="color: red" id="cartLastName">当前购物车为空</span>
+                        <%--                    <span style="color: red">当前购物车为空</span>--%>
                 </div>
             </c:if>
             <c:if test="${not empty sessionScope.cart.items}">
-                <span>您的购物车中有${sessionScope.cart.totalCount}件商品</span>
+                <span id="cartTotalCount">您的购物车中有${sessionScope.cart.totalCount}件商品</span>
                 <div>
-                    您刚刚将<span style="color: red">${sessionScope.lastAddBookName }</span>加入到了购物车中
+                    您刚刚将<span style="color: red" id="cartLastName">${sessionScope.lastAddBookName }</span>加入到了购物车中
                 </div>
             </c:if>
+
+            <%--            <c:if test="${empty sessionScope.cart.items }">--%>
+            <%--                <span id="cartTotalCount"></span>--%>
+            <%--                <div>--%>
+            <%--                    <span style="color: red" >当前购物车为空</span>--%>
+            <%--                </div>--%>
+            <%--            </c:if>--%>
+            <%--            <c:if test="${not empty sessionScope.cart.items}">--%>
+            <%--                <span >您的购物车中有${sessionScope.cart.totalCount}件商品</span>--%>
+            <%--                <div>--%>
+            <%--                    您刚刚将<span style="color: red" >${sessionScope.lastAddBookName }</span>加入到了购物车中--%>
+            <%--                </div>--%>
+            <%--            </c:if>--%>
         </div>
 
         <c:forEach items="${requestScope.page.items}" var="book">
